@@ -1,2 +1,14 @@
 <h2>{{title}}</h2>
-<button (click)="getName('Abdullah')">Click me !</button>
+<button (click)="getData('Call')">Call Function</button>
+<br/><br/>
+<input type="text" #box (keyup)="getData(box.value)"     placeholder="event KeyUp">
+<br/><br/>
+<input type="text" #box1 (keydown)="getData(box1.value)"     placeholder="event Keydown">
+<br/><br/>
+<input type="text" #box2 (blur)="getData(box2.value)"     placeholder="event Blur">
+<br/><br/>
+<input type="text" #box3 (input)="getData(box3.value)"     placeholder="event input">
+
+<h1 (mouseover)="getData('over')">Momin's Solution</h1>
+
+<h1 (mouseleave)="getData('leave')">Abdullah Usman</h1>

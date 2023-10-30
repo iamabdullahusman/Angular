@@ -7,9 +7,9 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Basic Form';
-  getName(name:string){
-alert("Click here");
+  title = 'Important events in Angular ';
+  getData(val:string){
+console.warn("Call function");
     
   }
 }
