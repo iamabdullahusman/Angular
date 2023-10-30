@@ -7,10 +7,11 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title:string = 'Get Input Box Value ';
-  displayVal = 'Abdullah Usman';
-  getValue(val:string){
-   console.warn(val)
-   this.displayVal=val
+  title= 'Counter with angular ';
+  count = 0
+  counter(type:string)
+  {
+    type==='add' ?  this.count++:this.count-- 
   }
+  
 }

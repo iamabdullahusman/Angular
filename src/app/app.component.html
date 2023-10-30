@@ -1,4 +1,4 @@
 <h1>{{title}}</h1>
-<input type="text" #box  placeholder="Enter Name" name="name">
-<button  (click)="getValue(box.value)"> Click </button>
-<p>Box Value is : {{displayVal}}</p>
+<button (click)="counter('minus')">--</button>
+<p>Count : {{count}}</p>
+<button (click)="counter('add')">++</button>
