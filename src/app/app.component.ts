@@ -7,6 +7,8 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title= 'Basic Rule of style ';
+  title= 'Property Binding  ';
+  name = "Abdullah";
+  disable=false;
  
 }
