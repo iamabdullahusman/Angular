@@ -7,11 +7,6 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title= 'Counter with angular ';
-  count = 0
-  counter(type:string)
-  {
-    type==='add' ?  this.count++:this.count-- 
-  }
-  
+  title= 'Basic Rule of style ';
+ 
 }
