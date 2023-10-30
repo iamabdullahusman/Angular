@@ -8,8 +8,8 @@ import { NgForm } from '@angular/forms';
 })
 export class AppComponent {
   title = 'Basic Form';
-  getData(form:NgForm){
-console.log(form);
+  getName(name:string){
+alert("Click here");
     
   }
 }

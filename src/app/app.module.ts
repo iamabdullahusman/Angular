@@ -3,7 +3,6 @@ import { BrowserModule } from '@angular/platform-browser';
 
 import { AppComponent } from './app.component';
 import { FormsModule } from '@angular/forms';
-import  {UserAuthModule}   from './user-auth/user-auth.module'
 
 
 
@@ -16,7 +15,7 @@ import  {UserAuthModule}   from './user-auth/user-auth.module'
   imports: [
     BrowserModule,
     FormsModule,
-    UserAuthModule
+   
   ],
   providers: [],
   bootstrap: [AppComponent]
