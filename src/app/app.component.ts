@@ -7,9 +7,10 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Important events in Angular ';
-  getData(val:string){
-console.warn("Call function");
-    
+  title:string = 'Get Input Box Value ';
+  displayVal = 'Abdullah Usman';
+  getValue(val:string){
+   console.warn(val)
+   this.displayVal=val
   }
 }
