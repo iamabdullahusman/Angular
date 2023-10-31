@@ -7,7 +7,7 @@ import { NgForm } from '@angular/forms';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title= 'multiple Conditions or else if  ';
- color = "Blue";
+  title= 'Switch Case ';
+ color = "green";
  
 }
