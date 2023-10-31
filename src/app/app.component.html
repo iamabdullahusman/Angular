@@ -1,5 +1,9 @@
 <h1 >{{title}}</h1>
-<input type="text" name="user-name" value={{name}} disabled={{disable}}>
-<br><br><br>
-<input type="text" name="user-name" [value]="name" [disabled]="disable">
+<h1 *ngIf="show; then ifblock else elseblock"></h1>
+<ng-template #ifblock>
+    <h1>if-Condition</h1>
+</ng-template>
+<ng-template #elseblock>
+    <h1>else-Condition</h1>
+</ng-template>
 
