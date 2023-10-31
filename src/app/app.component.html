@@ -1,9 +1,10 @@
 <h1 >{{title}}</h1>
-<h1 *ngIf="show; then ifblock else elseblock"></h1>
-<ng-template #ifblock>
-    <h1>if-Condition</h1>
+<ng-template [ngIf]="color==='red'">
+    <h1 style="color: red;">Red Color</h1>
 </ng-template>
-<ng-template #elseblock>
-    <h1>else-Condition</h1>
+<ng-template [ngIf]="color==='green'">
+    <h1 style="color: green;">Green Color</h1>
 </ng-template>
-
+<ng-template [ngIf]="color==='Blue'">
+    <h1 style="color: blue;">Blue Color</h1>
+</ng-template>
