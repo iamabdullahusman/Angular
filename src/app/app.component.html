@@ -1,18 +1,5 @@
 <h1>{{title}}</h1>
-<form #basicFrom="ngForm" (ngSubmit)="getData(basicFrom.value)">
-    <input type="text" ngModel     name="user" placeholder="Enter user Name" />
-    <br><br>
-    <input type="text" ngModel name="email" placeholder="Enter your E-mail" />
-    <br><br>
-    <input type="text" ngModel name="Password" placeholder="Enter your Password"/>
-    <br><br>
-    <button >Register</button>
-
-<ul>
-    <li>{{userdata.user}}</li>
-    <li>{{userdata.email}}</li>
-    <li>{{userdata.Password}}</li>
-</ul>
-
-
-</form>
+<button (click)="toggle()"> Toggle </button>
+<h1 *ngIf="display">
+    Heading Tag
+</h1>

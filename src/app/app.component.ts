@@ -8,12 +8,11 @@ import { NgForm } from '@angular/forms';
 })
 
 export class AppComponent {
-  title= ' Basic Foam';
-  userdata:any={};
-  getData(data:NgForm)
+  title= ' Toggle Element';
+  display=true
+  toggle()
   {
-    console.warn(data)
-    this.userdata=data
+this.display=! this.display;
   }
   
  
