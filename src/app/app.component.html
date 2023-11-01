@@ -1,5 +1,11 @@
 <h1>{{title}}</h1>
-<button (click)="toggle()"> Toggle </button>
-<h1 *ngIf="display">
-    Heading Tag
-</h1>
+<input type="text" placeholder="Enter New task" #task>
+<br><br>
+<button (click)="addtask(task.value)"> Add Task</button>
+<br><br>
+<ul *ngFor="let item of list">
+    <li>{{item.name}}
+        <button (click)="removetask(item.id)">Remove</button>
+    </li>
+
+</ul>

@@ -8,12 +8,19 @@ import { NgForm } from '@angular/forms';
 })
 
 export class AppComponent {
-  title= ' Toggle Element';
-  display=true
-  toggle()
-  {
-this.display=! this.display;
+  title= ' Todo list in Angular';
+  list:any[]=[];
+
+  addtask(item:string){
+  this.list.push({id:this.list.length,name:item});
+  console.warn(this.list)
   }
-  
+
+
+  removetask(id:number)
+  {
+    console.warn(id)
+    this.list=this.list.filter(item=>item.id!==id)
+  }
  
 }
