@@ -8,11 +8,13 @@ import { NgForm } from '@angular/forms';
 })
 
 export class AppComponent {
-  title= ' Reuseable Component ';
-  userDetails = [
-    {name:'Abdullah',email:'Abdullah@test.com'},
-    {name:'Ahsan',email:'Ahsan@test.com'},
-    {name:'Anus',email:'Anus@test.com'},
-    {name:'Bilal',email:'Bilal@test.com'},
-  ]
+  title= ' Send Data Child to parent Component  ';
+  data="x";
+  updateData(item:string){
+    console.warn(item)
+    this.data=item;
+
+  }
+  
+  
   }
