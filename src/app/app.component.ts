@@ -8,11 +8,11 @@ import { NgForm } from '@angular/forms';
 })
 
 export class AppComponent {
-  title= ' Pass Data Child to Component ';
-  data = 10;
-  updateChild()
-  {
-   this.data=Math.floor(Math.random()*10)
+  title= ' Reuseable Component ';
+  userDetails = [
+    {name:'Abdullah',email:'Abdullah@test.com'},
+    {name:'Ahsan',email:'Ahsan@test.com'},
+    {name:'Anus',email:'Anus@test.com'},
+    {name:'Bilal',email:'Bilal@test.com'},
+  ]
   }
- 
-}
