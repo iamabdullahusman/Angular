@@ -8,19 +8,11 @@ import { NgForm } from '@angular/forms';
 })
 
 export class AppComponent {
-  title= ' Todo list in Angular';
-  list:any[]=[];
-
-  addtask(item:string){
-  this.list.push({id:this.list.length,name:item});
-  console.warn(this.list)
-  }
-
-
-  removetask(id:number)
+  title= ' Pass Data Child to Component ';
+  data = 10;
+  updateChild()
   {
-    console.warn(id)
-    this.list=this.list.filter(item=>item.id!==id)
+   this.data=Math.floor(Math.random()*10)
   }
  
 }
