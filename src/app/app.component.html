@@ -1,6 +1,8 @@
-<h1>{{title}}</h1>
-<input type="text" #box name="name" placeholder="Enter your name">
-<button (click)="getVal(box.value)"> Call Function </button>
+<h1>{{title | uppercase}}</h1>
+<h1>{{capString(title)}}</h1>
+
+<h2>today | date : 'fullDate' </h2>
+
 
 
 

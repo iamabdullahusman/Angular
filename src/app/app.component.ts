@@ -8,12 +8,12 @@ import { NgForm } from '@angular/forms';
 })
 
 export class AppComponent {
-  title= ' Template Reference Variable ';
-  getVal(item:any)
+  title= ' pipes in angular ';
+  today = Date();
+  capString(item:string)
   {
-    console.warn(item)
+    return item.toUpperCase();
+    
   }
- 
   
-  
-  }
+}
