@@ -9,10 +9,5 @@ import { NgForm } from '@angular/forms';
 
 export class AppComponent {
   title= ' Advance pipes';
-  today = Date();
-  user:any={
-    name:'Abdullah',
-    age:23
-
-  }
+  
 }
