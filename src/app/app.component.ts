@@ -8,13 +8,12 @@ import { NgForm } from '@angular/forms';
 })
 
 export class AppComponent {
-  title= ' Send Data Child to parent Component  ';
-  data="x";
-  updateData(item:string){
+  title= ' Template Reference Variable ';
+  getVal(item:any)
+  {
     console.warn(item)
-    this.data=item;
-
   }
+ 
   
   
   }
