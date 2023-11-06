@@ -8,6 +8,10 @@ import { NgForm } from '@angular/forms';
 })
 
 export class AppComponent {
-  title= ' Advance pipes';
-  
+  title= ' Angular Template Driven Form';
+  userLogin(item:any)
+  {
+    console.warn(item);
+  }
+
 }
