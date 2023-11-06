@@ -1,14 +1,13 @@
 <h1>{{title}}</h1>
-<form [formGroup]="loginForm" (ngSubmit)="loginUser()">
-    <input type="text" placeholder="Enter your Name : " name="name" formControlName="user">
-    <br>
-    <span  style="color: red;"  *ngIf="user && user.invalid && user.touched">This Feild is not Valid</span> 
-    <br>
-    <input type="password" placeholder="Type Your password :" name="password" formControlName="password">
-    <br> <br>
-    <span  style="color: red;"  *ngIf="password && password.invalid && password.touched">This Feild is not Valid</span> 
-    <button> Login </button>
-</form>
+<h1 appRedE1 >{{title}}</h1>
+
+<p>Hello How are you</p>
+<p appRedEl> Code step by step</p>
+
+
+<p>Hello How are you</p>
+<p appRedEl> Code step by step</p>
+
 
 
 
