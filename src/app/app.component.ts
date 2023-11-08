@@ -10,6 +10,5 @@ import { FormControl , FormGroup , FormControlName , Validators } from '@angular
 
 export class AppComponent {
   title= ' Directives in Angular';
-  
- 
+
 }
