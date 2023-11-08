@@ -6,6 +6,7 @@ import { UserComponent } from './user/user.component';
 
 const routes: Routes = [
   {
+    
     path:'about',
     component:AboutComponent
   },
@@ -14,7 +15,7 @@ const routes: Routes = [
     component:HomeComponent
   },
   {
-    path:'user',
+    path:'user/:id',
     component:UserComponent
   },
   
