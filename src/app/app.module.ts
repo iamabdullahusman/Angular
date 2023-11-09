@@ -8,6 +8,7 @@ import { HomeComponent } from './home/home.component';
 import { AboutComponent } from './about/about.component';
 import { UserComponent } from './user/user.component';
 import { AppRoutingModule } from './app-routing.module';
+import { NoPageComponent } from './no-page/no-page.component';
 
 
 
@@ -19,6 +20,7 @@ import { AppRoutingModule } from './app-routing.module';
     HomeComponent,
     AboutComponent,
     UserComponent,
+    NoPageComponent,
   ],
   imports: [
     BrowserModule,
