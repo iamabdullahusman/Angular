@@ -11,6 +11,6 @@ import { FormControl , FormGroup , FormControlName , Validators } from '@angular
 })
 
 export class AppComponent{
-  title= ' Recap Module and Routing in Angular ';
+  title= ' Group Routing in Angular ';
   
 }

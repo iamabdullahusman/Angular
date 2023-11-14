@@ -5,6 +5,7 @@ import { ReactiveFormsModule } from '@angular/forms';
 import { AppRoutingModule } from './app-routing.module';
 import { HttpClientModule } from '@angular/common/http';
 import { AdminModule } from './admin/admin.module';
+import { UserModule } from './user/user.module';
 
 
 @NgModule({
@@ -16,7 +17,9 @@ import { AdminModule } from './admin/admin.module';
     ReactiveFormsModule,
     AppRoutingModule,
     HttpClientModule,
-    AdminModule
+    UserModule,
+    AdminModule,
+  
   ],
   providers: [],
   bootstrap: [AppComponent]
