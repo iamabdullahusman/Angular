@@ -1,7 +1,4 @@
-import { Component , OnInit} from '@angular/core';
-import { NgForm } from '@angular/forms';
-import { FormControl , FormGroup , FormControlName , Validators } from '@angular/forms'
-
+import { Component , ViewContainerRef,ComponentFactoryResolver} from '@angular/core';
 
 
 @Component({
@@ -11,6 +8,24 @@ import { FormControl , FormGroup , FormControlName , Validators } from '@angular
 })
 
 export class AppComponent{
-  title= ' Group Routing in Angular ';
-  
+  title= ' Lazy Loading Components ';
+  constructor (private viewConatiner:ViewContainerRef,
+    private cfr: ComponentFactoryResolver){}
+    async loadAdmin()
+    {
+        this.viewConatiner.clear();
+        const {AdminlistComponent} = await import('./adminlist/adminlist.component')
+        this.viewConatiner.createComponent(
+          this.cfr.resolveComponentFactory(AdminlistComponent)
+        )
+    }
+    async loaduser()
+    {
+      this.viewConatiner.clear();
+        const {UserlistComponent} = await import('./userlist/userlist.component')
+        this.viewConatiner.createComponent(
+          this.cfr.resolveComponentFactory(UserlistComponent)
+        )
+
+    }
 }
